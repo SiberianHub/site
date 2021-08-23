@@ -1,23 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import ContactModal from "./components/ContactModal/ContactModal";
+import DownButton from "./components/DownButton/DownButton";
+import TopBlock from "./components/TopBlock/TopBlock";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+import React from 'react';
 
 function App() {
+  const [modalShown, setModalShown] = React.useState(false)
+
+  const onMessageSend = () => {
+    toast.success('🚀 Сообщение успешно отправлено!', {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      });
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+      <ToastContainer
+                position="top-right"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+            />
+      <TopBlock showModal={() => setModalShown(true)}/>
+      <DownButton />
+      <ContactModal visible={modalShown} onClose={() => setModalShown(false)} onSend={() => {
+        setModalShown(false)
+        onMessageSend()  
+      }}/>
+      
     </div>
   );
 }

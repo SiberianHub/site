@@ -1,0 +1,113 @@
+.modal-container {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(255,255,255, 0.35);
+    transition: 0.3s;
+
+    &.visible {
+        transition: 1s;
+    }
+}
+
+.modal-div {
+    width: 30vw;
+    left: 35vw;
+    top: 20vh;
+    border-radius: 10px;
+    background-color: white;
+    position: absolute;
+    overflow: hidden;
+
+    header {
+        height: 7vw;
+        width: 30vw;
+        background-color: rgb(0, 48, 184);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        p {
+            font-family: 'Ubuntu-Bold';
+            color: white;
+            font-size: 2vw;
+            text-align: center;
+        }
+
+        img {
+            position: absolute;
+            height: 3vw;
+            top: 0px;
+            cursor: pointer;
+            transition: 0.3s;
+
+            &:hover {
+                opacity: 0.8;
+                transition: 0.3s;
+            }
+        }
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        textarea {
+            width: 80%;
+            margin-top: 20px;
+            background-color: white;
+            border-radius: 15px;
+            border: none;
+            box-shadow: 3px 3px 10px #ddd;
+            padding: 10px;
+            outline: none;
+            font-family: 'Ubuntu-Regular';
+            font-size: 1vw;
+            resize: none;
+        }
+
+        input {
+            width: 80%;
+            margin-top: 20px;
+            background-color: white;
+            border-radius: 15px;
+            border: none;
+            box-shadow: 3px 3px 10px #ddd;
+            padding: 10px;
+            outline: none;
+            font-family: 'Ubuntu-Regular';
+            font-size: 1vw;
+
+            &.message {
+                
+            }
+        }
+
+        .button {
+            margin: 20px;
+            padding: 10px;
+            background-color: rgb(0, 48, 184);
+            border: 3px solid white;
+            border-radius: 30px;
+            box-shadow: 0px 3px 10px #ddd;
+            cursor: pointer;
+            transition: 0.3s;
+
+            &:hover {
+                background-color: white;
+                border-color: rgb(0, 48, 184);
+                transition: .3s;
+
+                p {
+                    color:rgb(0, 48, 184)
+                }
+            }
+
+            p {
+                font-family: 'Ubuntu-Regular';
+                color: white;
+            }
+        }
+    }
+}

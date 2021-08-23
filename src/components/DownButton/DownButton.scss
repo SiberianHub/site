@@ -1,0 +1,19 @@
+.down-button {
+    background-color: #0055dd;
+    width: 6vw;
+    height: 6vw;
+    border: 3px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -3vw;
+    cursor: pointer;
+    position: absolute;
+    z-index: 0;
+    top: 42vw;
+
+    img {
+        height: 3vw;
+    }
+}

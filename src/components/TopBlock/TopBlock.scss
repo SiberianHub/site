@@ -1,0 +1,212 @@
+.topblock-div {
+    width: 100vw;
+    height: 42vw;
+    overflow: hidden;
+    position: relative;
+    background: -webkit-linear-gradient(to top, #0055dd,#19114c);/* Chrome 10-25, Safari 5.1-6 */                          
+    background: linear-gradient(to top, #0055dd,#19114c);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */            
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;  
+    z-index: 0; 
+
+    .text-container {
+        opacity: 0;
+        padding-bottom: 100px;
+        animation: fadein 0.8s forwards ease-out;
+        animation-delay: 2s;
+
+        @keyframes fadein {
+            from {
+                opacity: 0;
+                padding-bottom: 100px;
+            }
+            to {
+                opacity: 1;
+                padding-bottom: 0px;
+            }
+        }
+    }
+
+    h2 {
+        color: white;
+        font-family: 'Ubuntu-Bold', sans-serif;
+        font-size: 2vw;
+        position: absolute;
+        top: 30px;
+        left: 30px
+    }
+    
+    h3 {
+        color: white;
+        font-family: 'Ubuntu-Bold';
+        font-weight: 700;
+        text-align: center;
+        font-size: 3vw;
+    }
+
+    
+
+    .description {
+        color: white;
+        font-family: 'Ubuntu-Regular';
+        text-align: center;
+        margin-top: 20px;
+        font-size: 1vw;
+        width: 50vw;
+        margin: 30px auto 0px auto;
+        font-weight: 100;
+    }
+
+    .connect{
+        &__button {
+            background-color: white;
+            width: 10vw;
+            padding: 10px;
+            border-radius: 30px;
+            border: 3px solid white;
+            box-shadow: 0px 3px 10px #333;
+            transition: 0.3s;
+            margin: 30px auto 0px auto;
+            cursor: pointer;
+        }
+        
+        &__text {
+            font-family: 'Ubuntu-Regular';
+            font-size: 1vw;
+            text-align: center;
+            color: #0055dd;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+    }
+
+    .connect__button:hover{
+        transition: 0.3s;
+        background-color: transparent;
+        
+        .connect__text {
+            color: white;
+            margin: 0px;
+            font-weight: 700;
+        }
+    }
+
+
+    .green-slider {
+        position: absolute;
+        width: 20vw;
+        animation: slidein 0.8s forwards ease-out;
+        animation-delay: 1s;
+        top: -100vh;
+        left: 0px;
+    
+        @keyframes slidein {
+            from {
+              top: -100vh;
+              left: 0px;
+              transform: rotate(0.3turn)
+            }
+          
+            to {
+                top: 250px;
+                left: -150px;
+                transform: rotate(0turn);
+            }
+          }
+    }
+    
+    .planctonic {
+        position: absolute;
+        width: 16vw;
+        animation: planctonicslide 0.8s forwards ease-out;
+        animation-delay: 1s;
+        bottom: 100vh;
+        left: 0px;
+    
+        @keyframes planctonicslide {
+            from {
+              bottom: 100vh;
+              left: 0px;
+              transform: rotate(0.3turn)
+            }
+          
+            to {
+              bottom: -180px;
+              left: -100px;
+              transform: rotate(0turn);
+            }
+          }
+    }
+    
+    .cup {
+        position: absolute;
+        width: 15vw;
+        animation: cupslide 0.8s forwards ease-out;
+        animation-delay: 1s;
+        bottom: 100vh;
+        left: 0px;
+    
+        @keyframes cupslide {
+            from {
+              bottom: 100vh;
+              left: 0px;
+              transform: rotate(0.3turn)
+            }
+          
+            to {
+              bottom: -20px;
+              left: 220px;
+              transform: rotate(0turn);
+            }
+          }
+    }
+
+    .watch {
+        position: absolute;
+        width: 15vw;
+        animation: watchslide 0.8s forwards ease-out;
+        animation-delay: 1s;
+        bottom: 100vh;
+        right: 0px;
+    
+        @keyframes watchslide {
+            from {
+              bottom: 100vh;
+              right: 100px;
+              transform: rotate(0.3turn)
+            }
+          
+            to {
+              bottom: 200px;
+              right: 0px;
+              transform: rotate(0turn);
+            }
+          }
+    }
+
+    .phone {
+        position: absolute;
+        width: 15vw;
+        animation: phoneslide 0.8s forwards ease-out;
+        animation-delay: 1s;
+        bottom: 100vh;
+        right: 0px;
+    
+        @keyframes phoneslide {
+            from {
+              bottom: 100vh;
+              right: 100px;
+              transform: rotate(0.3turn)
+            }
+          
+            to {
+              bottom: -10vw;
+              right: 10vw;
+              transform: rotate(0turn);
+            }
+          }
+    }
+}
+
