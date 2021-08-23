@@ -35,10 +35,10 @@ function App() {
             />
       <TopBlock showModal={() => setModalShown(true)}/>
       <DownButton />
-      <ContactModal visible={modalShown} onClose={() => setModalShown(false)} onSend={() => {
+      {modalShown && <ContactModal onClose={() => setModalShown(false)} onSend={() => {
         setModalShown(false)
         onMessageSend()  
-      }}/>
+      }}/>}
       
     </div>
   );

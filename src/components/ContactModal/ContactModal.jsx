@@ -4,7 +4,7 @@ import './ContactModal.scss';
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
-export default function ContactModal({visible, onClose, onSend}){
+export default function ContactModal({onClose, onSend}){
     const [name, setName] = React.useState('');
     const [email, setEmail] = React.useState('');
     const [message, setMessage] = React.useState('')
@@ -28,7 +28,7 @@ export default function ContactModal({visible, onClose, onSend}){
     }
 
     return (
-        <div className={visible ? 'modal-container visible' : 'modal-container'} style={{display: visible ? 'block' : 'none'}}>
+        <div className={'modal-container'}>
             <ToastContainer
                 position="top-right"
                 autoClose={5000}
