@@ -93,7 +93,6 @@
         }
     }
 
-
     .green-slider {
         position: absolute;
         width: 20vw;
@@ -110,8 +109,8 @@
             }
           
             to {
-                top: 250px;
-                left: -150px;
+                top: 25vh;
+                left: -10vw;
                 transform: rotate(0turn);
             }
           }
@@ -133,8 +132,8 @@
             }
           
             to {
-              bottom: -180px;
-              left: -100px;
+              bottom: -13vh;
+              left: -4vw;
               transform: rotate(0turn);
             }
           }
@@ -156,8 +155,8 @@
             }
           
             to {
-              bottom: -20px;
-              left: 220px;
+              bottom: 8vh;
+              left: 15vw;
               transform: rotate(0turn);
             }
           }
@@ -179,7 +178,7 @@
             }
           
             to {
-              bottom: 200px;
+              bottom: 22vh;
               right: 0px;
               transform: rotate(0turn);
             }

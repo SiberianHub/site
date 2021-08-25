@@ -9,9 +9,15 @@ export default function ContactModal({onClose, onSend}){
     const [email, setEmail] = React.useState('');
     const [message, setMessage] = React.useState('')
 
+    const [fetching, setFething] = React.useState(false)
+
     const sendMessage = async () => {
+        setFething(true)
         const response = await sendMessageApiCall(name, email, message)
         if(response) {
+            setName('')
+            setEmail('')
+            setMessage('')
             onSend()
         } else {
             toast.error('😢 Ошибка отправки сообщения. Попробуйте позже', {
@@ -25,6 +31,7 @@ export default function ContactModal({onClose, onSend}){
                 });
                 
         }
+        setFething(false)
     }
 
     return (
@@ -51,9 +58,15 @@ export default function ContactModal({onClose, onSend}){
                 <input type={'text'} placeholder={'Email'} value={email} onChange={e => setEmail(e.target.value)}/>
                 <textarea rows={4} cols={100} placeholder={'Сообщение'} value={message} onChange={e => setMessage(e.target.value)}/>
 
+                {!fetching ?
                 <div className={'button'} onClick={() => sendMessage()}>
                     <p>Отправить сообщение</p>
+                </div> : 
+                <div className={'button'} >
+                    <p>Отправка сообщения..</p>
                 </div>
+                    
+                }
             </div>
         </div>
         </div>

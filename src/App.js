@@ -39,6 +39,7 @@ function App() {
         setModalShown(false)
         onMessageSend()  
       }}/>}
+      <div style={{height: '200vh'}}/>
       
     </div>
   );
