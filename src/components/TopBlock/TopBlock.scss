@@ -1,6 +1,6 @@
 .topblock-div {
     width: 100vw;
-    height: 42vw;
+    height: 830px;
     overflow: hidden;
     position: relative;
     background: -webkit-linear-gradient(to top, #0055dd,#19114c);/* Chrome 10-25, Safari 5.1-6 */                          
@@ -16,6 +16,7 @@
         padding-bottom: 100px;
         animation: fadein 0.8s forwards ease-out;
         animation-delay: 1s;
+        z-index: 1;
 
         @keyframes fadein {
             from {
@@ -43,7 +44,7 @@
         font-family: 'Ubuntu-Bold';
         font-weight: 700;
         text-align: center;
-        font-size: 3vw;
+        font-size: 4vw;
     }
 
     
@@ -53,7 +54,7 @@
         font-family: 'Ubuntu-Regular';
         text-align: center;
         margin-top: 20px;
-        font-size: 1vw;
+        font-size: 2vw;
         width: 50vw;
         margin: 30px auto 0px auto;
         font-weight: 100;
@@ -62,7 +63,7 @@
     .connect{
         &__button {
             background-color: white;
-            width: 10vw;
+            width: 20vw;
             padding: 10px;
             border-radius: 30px;
             border: 3px solid white;
@@ -74,7 +75,7 @@
         
         &__text {
             font-family: 'Ubuntu-Regular';
-            font-size: 1vw;
+            font-size: 2vw;
             text-align: center;
             color: #0055dd;
             font-weight: 700;
@@ -95,22 +96,22 @@
 
     .green-slider {
         position: absolute;
-        width: 20vw;
+        width: 30vw;
         animation: slidein 0.8s forwards ease-out;
         animation-delay: 1s;
-        top: -100vh;
+        top: -120vh;
         left: 0px;
     
         @keyframes slidein {
             from {
-              top: -100vh;
+              top: -120vh;
               left: 0px;
               transform: rotate(0.3turn)
             }
           
             to {
-                top: 25vh;
-                left: -10vw;
+                top: 200px;
+                left: -15vw;
                 transform: rotate(0turn);
             }
           }
@@ -118,15 +119,15 @@
     
     .planctonic {
         position: absolute;
-        width: 16vw;
+        width: 20vw;
         animation: planctonicslide 0.8s forwards ease-out;
         animation-delay: 1s;
-        bottom: 100vh;
+        bottom: 120vh;
         left: 0px;
     
         @keyframes planctonicslide {
             from {
-              bottom: 100vh;
+              bottom: 120vh;
               left: 0px;
               transform: rotate(0.3turn)
             }
@@ -141,22 +142,22 @@
     
     .cup {
         position: absolute;
-        width: 15vw;
+        width: 20vw;
         animation: cupslide 0.8s forwards ease-out;
         animation-delay: 1s;
-        bottom: 100vh;
+        bottom: 120vh;
         left: 0px;
     
         @keyframes cupslide {
             from {
-              bottom: 100vh;
+              bottom: 120vh;
               left: 0px;
               transform: rotate(0.3turn)
             }
           
             to {
-              bottom: 8vh;
-              left: 15vw;
+              bottom: 6vh;
+              left: 20vw;
               transform: rotate(0turn);
             }
           }
@@ -164,21 +165,21 @@
 
     .watch {
         position: absolute;
-        width: 15vw;
+        width: 20vw;
         animation: watchslide 0.8s forwards ease-out;
         animation-delay: 1s;
-        bottom: 100vh;
+        bottom: 120vh;
         right: 0px;
     
         @keyframes watchslide {
             from {
-              bottom: 100vh;
+              bottom: 120vh;
               right: 100px;
               transform: rotate(0.3turn)
             }
           
             to {
-              bottom: 22vh;
+              bottom: 200px;
               right: 0px;
               transform: rotate(0turn);
             }
@@ -190,19 +191,19 @@
         width: 15vw;
         animation: phoneslide 0.8s forwards ease-out;
         animation-delay: 1s;
-        bottom: 100vh;
+        bottom: 120vh;
         right: 0px;
     
         @keyframes phoneslide {
             from {
-              bottom: 100vh;
+              bottom: 120vh;
               right: 100px;
               transform: rotate(0.3turn)
             }
           
             to {
-              bottom: -10vw;
-              right: 10vw;
+              bottom: -150px;
+              right: 15vw;
               transform: rotate(0turn);
             }
           }
