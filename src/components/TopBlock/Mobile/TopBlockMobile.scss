@@ -1,6 +1,6 @@
-.topblock-div {
+.topblock-div-mobile {
     width: 100vw;
-    height: 830px;
+    height: 100vh;
     overflow: hidden;
     position: relative;
     background: -webkit-linear-gradient(to top, #0055dd,#19114c);/* Chrome 10-25, Safari 5.1-6 */                          
@@ -33,10 +33,10 @@
     h2 {
         color: white;
         font-family: 'Ubuntu-Bold', sans-serif;
-        font-size: 2vw;
+        font-size: 30px;
         position: absolute;
         top: 30px;
-        left: 30px
+        left: 30px;
     }
     
     h3 {
@@ -44,7 +44,7 @@
         font-family: 'Ubuntu-Bold';
         font-weight: 700;
         text-align: center;
-        font-size: 4vw;
+        font-size: 30px;
     }
 
     
@@ -54,8 +54,8 @@
         font-family: 'Ubuntu-Regular';
         text-align: center;
         margin-top: 20px;
-        font-size: 2vw;
-        width: 50vw;
+        font-size: 15px;
+        width: 90vw;
         margin: 30px auto 0px auto;
         font-weight: 100;
     }
@@ -63,7 +63,7 @@
     .connect{
         &__button {
             background-color: white;
-            width: 20vw;
+            width: 150px;
             padding: 10px;
             border-radius: 30px;
             border: 3px solid white;
@@ -75,7 +75,7 @@
         
         &__text {
             font-family: 'Ubuntu-Regular';
-            font-size: 2vw;
+            font-size: 15px;
             text-align: center;
             color: #0055dd;
             font-weight: 700;
@@ -94,9 +94,9 @@
         }
     }
 
-    .green-slider {
+    .green-slider-mobile {
         position: absolute;
-        width: 30vw;
+        width: 30vh;
         animation: slidein 0.8s forwards ease-out;
         animation-delay: 1s;
         top: -830px;
@@ -111,15 +111,15 @@
           
             to {
                 top: 200px;
-                left: -15vw;
+                left: -15vh;
                 transform: rotate(0turn);
             }
           }
     }
     
-    .planctonic {
+    .planctonic-mobile {
         position: absolute;
-        width: 20vw;
+        width: 20vh;
         animation: planctonicslide 0.8s forwards ease-out;
         animation-delay: 1s;
         bottom: 830px;
@@ -134,15 +134,15 @@
           
             to {
               bottom: -13vh;
-              left: -4vw;
+              left: -4vh;
               transform: rotate(0turn);
             }
           }
     }
     
-    .cup {
+    .cup-mobile {
         position: absolute;
-        width: 20vw;
+        width: 20vh;
         animation: cupslide 0.8s forwards ease-out;
         animation-delay: 1s;
         bottom: 830px;
@@ -157,38 +157,15 @@
           
             to {
               bottom: 6vh;
-              left: 20vw;
+              left: 10px;
               transform: rotate(0turn);
             }
           }
     }
 
-    .watch {
+    .phone-mobile {
         position: absolute;
-        width: 20vw;
-        animation: watchslide 0.8s forwards ease-out;
-        animation-delay: 1s;
-        bottom: 830px;
-        right: 0px;
-    
-        @keyframes watchslide {
-            from {
-              bottom: 830px;
-              right: 100px;
-              transform: rotate(0.3turn)
-            }
-          
-            to {
-              bottom: 200px;
-              right: 0px;
-              transform: rotate(0turn);
-            }
-          }
-    }
-
-    .phone {
-        position: absolute;
-        width: 15vw;
+        width: 15vh;
         animation: phoneslide 0.8s forwards ease-out;
         animation-delay: 1s;
         bottom: 830px;
@@ -202,8 +179,8 @@
             }
           
             to {
-              bottom: -150px;
-              right: 15vw;
+              bottom: -7vh;
+              right: 10px;
               transform: rotate(0turn);
             }
           }

@@ -1,9 +1,11 @@
 import ContactModal from "./components/ContactModal/ContactModal";
 import DownButton from "./components/DownButton/DownButton";
-import TopBlock from "./components/TopBlock/TopBlock";
+import TopBlock from "./components/TopBlock/Desktop/TopBlock";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import React from 'react';
+import { isDesktop } from "react-device-detect";
+import TopBlockMobile from "./components/TopBlock/Mobile/TopBlockMobile";
 
 function App() {
   const [modalShown, setModalShown] = React.useState(false)
@@ -33,7 +35,9 @@ function App() {
                 draggable
                 pauseOnHover
             />
-      <TopBlock showModal={() => setModalShown(true)}/>
+      {isDesktop ? 
+        <TopBlock showModal={() => setModalShown(true)}/> : 
+        <TopBlockMobile showModal={() => setModalShown(true)} />}
       <DownButton />
       {modalShown && <ContactModal onClose={() => setModalShown(false)} onSend={() => {
         setModalShown(false)
