@@ -1,0 +1,75 @@
+.motivation-div-mobile {
+    width: 100vw;
+    // height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // border: 1px solid red;
+    align-items: center;
+    font-family: 'Ubuntu-Regular';
+    // box-shadow: 0px 10px 10px #eee;
+
+    .motivation-title {
+        width: 80vw;
+        font-family: 'Ubuntu-Bold';
+        font-weight: 700;
+        text-align: center;
+        align-self: center;
+        font-size: 3.5vh;
+    }
+
+    .motivation-description {
+        font-family: 'Ubuntu-Regular';
+        text-align: center;
+        margin-top: 20px;
+        font-size: 2vh;
+        width: 80vw;
+        margin: 30px auto 0px auto;
+        font-weight: 100;
+    }
+
+    .buttons-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        flex-wrap: wrap;
+
+        .button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80vw;
+            margin: 40px;
+
+            div {
+                width: 50vw;
+                height: 50vw;
+                border-radius: 50%;
+                box-shadow: 0px 3px 15px #ddd;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                overflow: hidden;
+
+                img {
+                    width: 50vw;
+                    align-self: center;
+                }
+            }
+
+            h6 {
+                font-size: 4vh;
+                margin: 5px;
+                margin-top: 20px;
+                text-align: center;
+            }
+
+            p {
+                font-size: 2.5vh;
+                color: #777;
+                text-align: center;
+            }
+        }
+    }
+}
