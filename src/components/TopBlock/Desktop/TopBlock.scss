@@ -1,6 +1,6 @@
 .topblock-div {
     width: 100vw;
-    height: 830px;
+    height: 100vh;
     overflow: hidden;
     position: relative;
     background: -webkit-linear-gradient(to top, #0055dd,#19114c);/* Chrome 10-25, Safari 5.1-6 */                          
@@ -63,7 +63,7 @@
     .connect{
         &__button {
             background-color: white;
-            width: 300px;
+            width: 20vw;
             padding: 10px;
             border-radius: 30px;
             border: 3px solid white;
@@ -100,12 +100,12 @@
   width: 30vw;
   animation: slideinDesktop 0.8s forwards ease-out;
   animation-delay: 1s;
-  top: -830px;
+  top: -100vh;
   left: 0px;
 
   @keyframes slideinDesktop {
       from {
-        top: -830px;
+        top: -100vh;
         left: 0px;
         transform: rotate(0.3turn)
       }
@@ -123,12 +123,12 @@
   width: 20vw;
   animation: planctonicslideDesktop 0.8s forwards ease-out;
   animation-delay: 1s;
-  bottom: 830px;
+  bottom: 100vh;
   left: 0px;
 
   @keyframes planctonicslideDesktop {
       from {
-        bottom: 830px;
+        bottom: 100vh;
         left: 0px;
         transform: rotate(0.3turn)
       }
@@ -146,12 +146,12 @@
   width: 20vw;
   animation: cupslideDesktop 0.8s forwards ease-out;
   animation-delay: 1s;
-  bottom: 830px;
+  bottom: 100vh;
   left: 0px;
 
   @keyframes cupslideDesktop {
       from {
-        bottom: 830px;
+        bottom: 100vh;
         left: 0px;
         transform: rotate(0.3turn)
       }
@@ -169,12 +169,12 @@
   width: 20vw;
   animation: watchslideDesktop 0.8s forwards ease-out;
   animation-delay: 1s;
-  bottom: 830px;
+  bottom: 100vh;
   right: 0px;
 
   @keyframes watchslideDesktop {
       from {
-        bottom: 830px;
+        bottom: 100vh;
         right: 100px;
         transform: rotate(0.3turn)
       }
@@ -192,12 +192,12 @@
   width: 15vw;
   animation: phoneslideDesktop 0.8s forwards ease-out;
   animation-delay: 1s;
-  bottom: 830px;
+  bottom: 100vh;
   right: 0px;
 
   @keyframes phoneslideDesktop {
       from {
-        bottom: 830px;
+        bottom: 100vh;
         right: 100px;
         transform: rotate(0.3turn)
       }

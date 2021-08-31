@@ -168,12 +168,12 @@
         width: 15vh;
         animation: phoneslide 0.8s forwards ease-out;
         animation-delay: 1s;
-        bottom: 830px;
+        bottom: 120vh;
         right: 0px;
     
         @keyframes phoneslide {
             from {
-              bottom: 830px;
+              bottom: 120vh;
               right: 100px;
               transform: rotate(0.3turn)
             }

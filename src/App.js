@@ -6,6 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import React from 'react';
 import { isDesktop } from "react-device-detect";
 import TopBlockMobile from "./components/TopBlock/Mobile/TopBlockMobile";
+import MotivationBlock from "./components/MotivationBlock/Desktop/MotivationBlock";
 
 function App() {
   const [modalShown, setModalShown] = React.useState(false)
@@ -43,6 +44,7 @@ function App() {
         setModalShown(false)
         onMessageSend()  
       }}/>}
+      {isDesktop ? <MotivationBlock /> : null}
       <div style={{height: '200vh'}}/>
       
     </div>

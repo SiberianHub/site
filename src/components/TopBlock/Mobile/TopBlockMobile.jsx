@@ -1,10 +1,10 @@
 import React from 'react';
 import './TopBlockMobile.scss';
 
-import green from '../../../assets/img/green-slider.png'
-import planctonic from '../../../assets/img/planctonic.png'
-import cup from '../../../assets/img/cup.png'
-import phone from '../../../assets/img/phone.png'
+import green from '../../../assets/img/topBlock/green-slider.png'
+import planctonic from '../../../assets/img/topBlock/planctonic.png'
+import cup from '../../../assets/img/topBlock/cup.png'
+import phone from '../../../assets/img/topBlock/phone.png'
 
 export default function TopBlockMobile({showModal}){
 
