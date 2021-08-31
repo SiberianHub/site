@@ -1,0 +1,65 @@
+.mission-block-mobile {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin-top: 200px;
+
+    img {
+        width: 100vw;
+        height: 100vw
+    }
+
+    .buttons-container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+
+        .button {
+            height: 13vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: row;
+            transition: 0.3s;
+            cursor: pointer;
+            background-color: #eee;
+
+            img {
+                align-self: center;
+                margin: 50px;
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+                width: 80vw;
+                justify-content: center;
+                
+                .title {
+                    font-family: 'Ubuntu-Bold';
+                    font-size: 35px;
+                    margin-bottom: 10px;
+                }
+
+                .description {
+                    font-family: 'Ubuntu-Regular';
+                    font-size: 23px;
+                }
+            }
+
+            &:hover {
+                background-color: #ddd;
+                transition: 0.3s;
+            }
+
+            &.active {
+                background-color: #0055dd;
+                color: white;
+
+                img {
+                    filter: brightness(5);
+                }
+            }
+        }
+    }
+}

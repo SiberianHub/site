@@ -8,6 +8,8 @@ import { isDesktop } from "react-device-detect";
 import TopBlockMobile from "./components/TopBlock/Mobile/TopBlockMobile";
 import MotivationBlock from "./components/MotivationBlock/Desktop/MotivationBlock";
 import MotivationBlockMobile from "./components/MotivationBlock/Mobile/MotivationBlockMobile";
+import MissionBlock from "./components/MissionBlock/Desktop/MissionBlock";
+import MissionBlockMobile from "./components/MissionBlock/Mobile/MissionBlockMobile";
 
 function App() {
   const [modalShown, setModalShown] = React.useState(false)
@@ -46,6 +48,7 @@ function App() {
         onMessageSend()  
       }}/>}
       {isDesktop ? <MotivationBlock /> : <MotivationBlockMobile />}
+      {isDesktop ? <MissionBlock /> : <MissionBlockMobile />}
       <div style={{height: '200vh'}}/>
       
     </div>
