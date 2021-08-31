@@ -6,7 +6,7 @@ export default function TeamBlockMobile(){
     return(
         <section className={'team-div-mobile'}>
                 <h3 className={'team-title'}>Лучшая команда из доступных</h3>
-                <p className={'team-description'}>Мы понимаем, что вам нужно, и готовы дать это вам</p>}
+                <p className={'team-description'}>Мы понимаем, что вам нужно, и готовы дать это вам</p>
             <div className={'buttons-div-mobile'}>
                 {teamInfo.map(item => {
                     return(

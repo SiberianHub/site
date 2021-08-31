@@ -11,12 +11,14 @@
 
     .buttons-container {
         width: 100vw;
-        height: 100vw;
+        // height: 100vw;
         display: flex;
         flex-direction: column;
 
         .button {
-            height: 13vh;
+            // height: 13vh;
+            padding-top: 10px;
+            padding-bottom: 10px;
             width: 100vw;
             display: flex;
             flex-direction: row;
@@ -26,7 +28,7 @@
 
             img {
                 align-self: center;
-                margin: 50px;
+                margin: 20px;
             }
 
             div {
@@ -37,13 +39,14 @@
                 
                 .title {
                     font-family: 'Ubuntu-Bold';
-                    font-size: 40px;
+                    font-size: 20px;
                     margin-bottom: 10px;
                 }
 
                 .description {
                     font-family: 'Ubuntu-Regular';
-                    font-size: 35px;
+                    font-size: 15px;
+                    width: 70vw;
                 }
             }
 

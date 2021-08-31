@@ -21,28 +21,28 @@ export default function MissionBlockMobile(){
             <img src={photos[stage]} style={{objectFit: 'cover'}} />
             <div className={'buttons-container'}>
                 <div className={stage === 0 ? 'button active' : 'button'} onClick={() => setStage(0)}>
-                    <img src={mission} style={{height: 100, width: 100}} />
+                    <img src={mission} style={{height: 50, width: 50}} />
                     <div>
                         <p className={'title'}>Наша миссия</p>
                         <p className={'description'}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
                     </div>
                 </div>
                 <div className={stage === 1 ? 'button active' : 'button'} onClick={() => setStage(1)}>
-                    <img src={history} style={{height: 100, width: 100}} />
+                    <img src={history} style={{height: 50, width: 50}} />
                     <div>
                         <p className={'title'}>Наша история</p>
                         <p className={'description'}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
                     </div>
                 </div>
                 <div className={stage === 2 ? 'button active' : 'button'} onClick={() => setStage(2)}>
-                    <img src={people} style={{height: 100, width: 100}} />
+                    <img src={people} style={{height: 50, width: 50}} />
                     <div>
                         <p className={'title'}>Наши люди</p>
                         <p className={'description'}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
                     </div>
                 </div>
                 <div className={stage === 3 ? 'button active' : 'button'} onClick={() => setStage(3)}>
-                    <img src={focus} style={{height: 100, width: 100}} />
+                    <img src={focus} style={{height: 50, width: 50}} />
                     <div>
                         <p className={'title'}>Наше внимание</p>
                         <p className={'description'}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>

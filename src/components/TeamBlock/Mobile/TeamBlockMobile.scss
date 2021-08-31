@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     font-family: 'Ubuntu-Regular';
+    margin-top: 40px;
 
     .team-title {
         width: 80vw;
@@ -10,7 +11,7 @@
         font-weight: 700;
         text-align: center;
         align-self: center;
-        font-size: 7vw;
+        font-size: 30px;
         text-align: center;
     }
 
@@ -19,7 +20,7 @@
         width: 80vw;
         text-align: center;
         margin-top: 20px;
-        font-size: 4vw;
+        font-size: 20px;
         margin: 30px auto 0px auto;
         font-weight: 100;
     }
@@ -49,19 +50,19 @@
                 transition: .3s;
                 display: flex;
                 flex-direction: column;
-                padding: 30px;
+                padding: 10px;
                 
 
                 .teammate-name { 
                     color: white;
-                    margin: 30px;
-                    font-size: 70px;
+                    margin: 10px;
+                    font-size: 30px;
                 }
 
                 .teammate-description {
                     color: white;
                     text-align: left;
-                    font-size: 60px;
+                    font-size: 20px;
                 }
 
                 .contacts {
@@ -110,14 +111,14 @@
             }
 
             h6 {
-                font-size: 80px;
+                font-size: 30px;
                 margin: 5px;
                 margin-top: 20px;
                 text-align: center;
             }
 
             p {
-                font-size: 60px;
+                font-size: 25px;
                 color: #777;
                 text-align: center;
             }
