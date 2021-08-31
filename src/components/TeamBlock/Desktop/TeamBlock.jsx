@@ -16,7 +16,7 @@ export default function TeamBlock(){
         <section className={'team-div'}>
             <div>
                 <h3 className={'team-title'}>Лучшая команда из доступных</h3>
-                <p className={'team-description'}>Мы понимаем, что вам нужно, и готово дать это вам</p>
+                <p className={'team-description'}>Мы понимаем, что вам нужно, и готовы дать это вам</p>
             </div>
             <div className={'buttons-div'}>
                 {teamInfo.map(item => {
