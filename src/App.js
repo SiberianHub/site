@@ -11,6 +11,7 @@ import MotivationBlockMobile from "./components/MotivationBlock/Mobile/Motivatio
 import MissionBlock from "./components/MissionBlock/Desktop/MissionBlock";
 import MissionBlockMobile from "./components/MissionBlock/Mobile/MissionBlockMobile";
 import TeamBlock from "./components/TeamBlock/Desktop/TeamBlock";
+import TeamBlockMobile from "./components/TeamBlock/Mobile/TeamBlockMobile";
 
 function App() {
   const [modalShown, setModalShown] = React.useState(false)
@@ -50,7 +51,7 @@ function App() {
       }}/>}
       {isDesktop ? <MotivationBlock /> : <MotivationBlockMobile />}
       {isDesktop ? <MissionBlock /> : <MissionBlockMobile />}
-      {isDesktop ? <TeamBlock /> : null}
+      {isDesktop ? <TeamBlock /> : <TeamBlockMobile />}
       <div style={{height: '200vh'}}/>
       
     </div>

@@ -1,46 +1,95 @@
-.motivation-div-mobile {
-    width: 100vw;
-    // height: 100vh;
+.team-div-mobile {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    // border: 1px solid red;
     align-items: center;
     font-family: 'Ubuntu-Regular';
-    // box-shadow: 0px 10px 10px #eee;
 
-    .motivation-title {
+    .team-title {
         width: 80vw;
         font-family: 'Ubuntu-Bold';
         font-weight: 700;
         text-align: center;
         align-self: center;
-        font-size: 3.5vh;
+        font-size: 7vw;
+        text-align: center;
     }
 
-    .motivation-description {
+    .team-description {
         font-family: 'Ubuntu-Regular';
+        width: 80vw;
         text-align: center;
         margin-top: 20px;
-        font-size: 2vh;
-        width: 80vw;
+        font-size: 4vw;
         margin: 30px auto 0px auto;
         font-weight: 100;
     }
 
-    .buttons-div {
+    .buttons-div-mobile {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        margin-top: 10px;
+        // margin-top: 100px;
         flex-wrap: wrap;
 
         .button {
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 80vw;
-            margin: 40px;
+            width: 90vw;
+            height: 70vw;
+            margin: 60px;
+            z-index: 0;
+
+            .card-cover {
+                position: absolute;
+                width: 50vw;
+                height: 70vw;
+                background-color: #0055ff;
+                opacity: 0;
+                z-index: 5;
+                transition: .3s;
+                display: flex;
+                flex-direction: column;
+                padding: 30px;
+                
+
+                .teammate-name { 
+                    color: white;
+                    margin: 30px;
+                    font-size: 70px;
+                }
+
+                .teammate-description {
+                    color: white;
+                    text-align: left;
+                    font-size: 60px;
+                }
+
+                .contacts {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    border-radius: 0px;
+                    box-shadow: none;
+                    width: 100%;
+                    justify-self: flex-end;
+
+                    img {
+                        width: 15vw;
+                        height: 15vw;
+                        margin: 5vw;
+                    }
+                }
+            }
+
+            &:hover {
+                .card-cover {
+                    width: 90vw;
+                    height: 70vw;
+                    opacity: 1;
+                    transition: .3s;
+                    border-radius: 30px;
+                }
+            }
 
             div {
                 width: 50vw;
@@ -53,20 +102,22 @@
                 overflow: hidden;
 
                 img {
+                    height: 50vw;
                     width: 50vw;
+                    object-fit: cover;
                     align-self: center;
                 }
             }
 
             h6 {
-                font-size: 4vh;
+                font-size: 80px;
                 margin: 5px;
                 margin-top: 20px;
                 text-align: center;
             }
 
             p {
-                font-size: 2.5vh;
+                font-size: 60px;
                 color: #777;
                 text-align: center;
             }

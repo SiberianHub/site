@@ -1,39 +1,33 @@
 import React from 'react';
-import './MotivationBlockMobile.scss';
+import './TeamBlockMobile.scss';
+import teamInfo from '../teamInfo'
 
-import development from '../../../assets/img/motivationBlock/development.jpg'
-import design from '../../../assets/img/motivationBlock/design.jpg'
-import management from '../../../assets/img/motivationBlock/management.jpg'
-
-export default function MotivationBlockMobile(){
+export default function TeamBlockMobile(){
     return(
-        <section className={'motivation-div-mobile'}>
-            <div>
-                <h3 className={'motivation-title'}>Самая трудная часть старта - это начало</h3>
-                <p className={'motivation-description'}>Давайте вместе начнём создавать что-то по-настоящему классное</p>
-            </div>
-            <div className={'buttons-div'}>
-                <div className={'button'}>
-                    <div>
-                        <img src={development}/>
-                    </div>
-                    <h6>Разработка</h6>
-                    <p>Создание сервисов согласно вашим требованиям</p>
-                </div>
-                <div className={'button'}>
-                    <div>
-                        <img src={design}/>
-                    </div>
-                    <h6>Помощь в дизайне</h6>
-                    <p>Мы поможем доработать ваши дизайн-проекты для лучшего пользовательского опыта</p>
-                </div>
-                <div className={'button'}>
-                    <div>
-                        <img src={management}/>
-                    </div>
-                    <h6>Какой-то пункт</h6>
-                    <p>Какой-то текст</p>
-                </div>
+        <section className={'team-div-mobile'}>
+                <h3 className={'team-title'}>Лучшая команда из доступных</h3>
+                <p className={'team-description'}>Мы понимаем, что вам нужно, и готовы дать это вам</p>}
+            <div className={'buttons-div-mobile'}>
+                {teamInfo.map(item => {
+                    return(
+                        <div className={'button'}>
+                            <div>
+                                <img src={item.img} alt={item.name}/>
+                            </div>
+                            <h6>{item.name}</h6>
+                            <p>{item.speciality}</p>
+                            <div className={'card-cover'}>
+                                <p className={'teammate-name'}>{item.name}</p>
+                                <p className={'teammate-description'}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                                <div className={'contacts'}>
+                                    <a href={item.vk} target="_blank"><img src="https://img.icons8.com/ios/70/ffffff/vk-circled--v1.png"/></a>
+                                    <a href={item.telegram} target="_blank"><img src="https://img.icons8.com/ios/70/ffffff/telegram-app.png"/></a>
+                                    <a href={item.github} target="_blank"><img src="https://img.icons8.com/ios/70/ffffff/github--v1.png"/></a>
+                                </div>
+                            </div>
+                        </div>
+                    )
+                })}
             </div>
         </section>
     )
