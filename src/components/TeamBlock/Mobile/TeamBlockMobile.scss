@@ -1,5 +1,6 @@
 .team-div-mobile {
     display: flex;
+    width: 100vw;
     flex-direction: column;
     align-items: center;
     font-family: 'Ubuntu-Regular';
@@ -28,16 +29,16 @@
     .buttons-div-mobile {
         display: flex;
         flex-direction: column;
-        // margin-top: 100px;
+        width: 100%;
         flex-wrap: wrap;
 
         .button {
             display: flex;
+            margin: 60px auto 60px auto;
             flex-direction: column;
             align-items: center;
             width: 90vw;
             height: 70vw;
-            margin: 60px;
             z-index: 0;
 
             .card-cover {

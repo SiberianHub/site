@@ -3,6 +3,10 @@
     margin: 0px;
 }
 
+body {
+    width: 100vw;
+}
+
 @font-face {
     font-family: 'Ubuntu-Regular';
     src: local('Ubuntu-Regular'), url(./assets/font/Ubuntu-Regular.ttf) format('truetype');
