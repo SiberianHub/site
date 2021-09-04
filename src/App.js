@@ -14,6 +14,8 @@ import TeamBlock from "./components/TeamBlock/Desktop/TeamBlock";
 import TeamBlockMobile from "./components/TeamBlock/Mobile/TeamBlockMobile";
 import QuoteBlock from "./components/QuoteBlock/Desktop/QuoteBlock";
 import OurWorkBlock from "./components/OurWorkBlock/Desktop/OurWorkBlock";
+import OurWorkBlockMobile from "./components/OurWorkBlock/Mobile/OurWorkBlockMobile";
+import ContactUsBlock from "./components/ContactUsBlock/Desktop/ContactUsBlock";
 
 function App() {
   const [modalShown, setModalShown] = React.useState(false)
@@ -55,9 +57,8 @@ function App() {
       {isDesktop ? <MissionBlock /> : <MissionBlockMobile />}
       {isDesktop ? <TeamBlock /> : <TeamBlockMobile />}
       {isDesktop ? <QuoteBlock /> : <QuoteBlock />}
-      {isDesktop ? <OurWorkBlock /> : null}
-      <div style={{height: '200vh'}}/>
-      
+      {isDesktop ? <OurWorkBlock /> : <OurWorkBlockMobile />}
+      {isDesktop ? <ContactUsBlock /> : null}
     </div>
   );
 }
