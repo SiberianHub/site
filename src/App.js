@@ -16,6 +16,7 @@ import QuoteBlock from "./components/QuoteBlock/Desktop/QuoteBlock";
 import OurWorkBlock from "./components/OurWorkBlock/Desktop/OurWorkBlock";
 import OurWorkBlockMobile from "./components/OurWorkBlock/Mobile/OurWorkBlockMobile";
 import ContactUsBlock from "./components/ContactUsBlock/Desktop/ContactUsBlock";
+import ContactUsBlockMobile from "./components/ContactUsBlock/Mobile/ContactUsBlockMobile";
 
 function App() {
   const [modalShown, setModalShown] = React.useState(false)
@@ -58,7 +59,7 @@ function App() {
       {isDesktop ? <TeamBlock /> : <TeamBlockMobile />}
       {isDesktop ? <QuoteBlock /> : <QuoteBlock />}
       {isDesktop ? <OurWorkBlock /> : <OurWorkBlockMobile />}
-      {isDesktop ? <ContactUsBlock /> : null}
+      {isDesktop ? <ContactUsBlock /> : <ContactUsBlockMobile />}
     </div>
   );
 }
