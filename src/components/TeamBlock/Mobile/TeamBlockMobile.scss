@@ -58,12 +58,16 @@
                     color: white;
                     margin: 10px;
                     font-size: 30px;
+                    width: 90vw;
+                    opacity: 0;
                 }
 
                 .teammate-description {
                     color: white;
                     text-align: left;
                     font-size: 20px;
+                    width: 90vw;
+                    opacity: 0;
                 }
 
                 .contacts {
@@ -90,6 +94,14 @@
                     opacity: 1;
                     transition: .3s;
                     border-radius: 30px;
+
+                    .teammate-name {
+                        opacity: 1;
+                    }
+
+                    .teammate-description {
+                        opacity: 1;
+                    }
                 }
             }
 

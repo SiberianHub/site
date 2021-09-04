@@ -59,12 +59,16 @@
                 .name { 
                     color: white;
                     margin: 10px;
-                    font-size: 40px;
+                    font-size: 30px;
+                    width: 20vw;
+                    opacity: 0;
                 }
 
                 .description {
                     color: white;
                     text-align: left;
+                    width: 20vw;
+                    opacity: 0;
                 }
 
                 .contacts {
@@ -92,6 +96,14 @@
                     opacity: 1;
                     transition: .3s;
                     border-radius: 30px;
+
+                    .name {
+                        opacity: 1;
+                    }
+
+                    .description {
+                        opacity: 1;
+                    }
                 }
             }
 
