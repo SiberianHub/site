@@ -59,7 +59,7 @@ function App() {
       {isDesktop ? <TeamBlock /> : <TeamBlockMobile />}
       {isDesktop ? <QuoteBlock /> : <QuoteBlock />}
       {isDesktop ? <OurWorkBlock /> : <OurWorkBlockMobile />}
-      {isDesktop ? <ContactUsBlock /> : <ContactUsBlockMobile />}
+      {isDesktop ? <ContactUsBlock showModal={() => onMessageSend()} /> : <ContactUsBlockMobile showModal={() => onMessageSend()} />}
     </div>
   );
 }
