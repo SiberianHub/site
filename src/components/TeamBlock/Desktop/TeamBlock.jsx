@@ -21,7 +21,7 @@ export default function TeamBlock(){
                             <p>{item.speciality}</p>
                             <div className={'card-cover'}>
                                 <p className={'name'}>{item.name}</p>
-                                <p className={'description'}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                                <p className={'description'}>{item.description}</p>
                                 <div className={'contacts'}>
                                     <a href={item.vk} target="_blank"><img src="https://img.icons8.com/ios/70/ffffff/vk-circled--v1.png"/></a>
                                     <a href={item.telegram} target="_blank"><img src="https://img.icons8.com/ios/70/ffffff/telegram-app.png"/></a>

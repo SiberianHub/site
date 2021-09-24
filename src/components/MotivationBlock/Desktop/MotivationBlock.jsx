@@ -31,8 +31,8 @@ export default function MotivationBlock(){
                     <div>
                         <img src={management}/>
                     </div>
-                    <h6>Какой-то пункт</h6>
-                    <p>Какой-то текст</p>
+                    <h6>Сопровождение</h6>
+                    <p>Мы всегда будем рядом, чтобы помочь вам</p>
                 </div>
             </div>
         </section>
